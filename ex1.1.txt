@@ -1,0 +1,14 @@
+ tr -c '[:alnum:]' '[\n*]' < test.txt | sort | uniq -c | sort -nr | head -10
+
+
+
+
+tr - translate/delete
+'[:alnum:]' - the character class of numbers and letters in the current locale
+'[\n*]' - new line????
+
+sort - sorts the content of a file line by line
+uniq - reports or filters out repeated lines in a file
+
+sort -nr
+head -10 - retrieves the first 10 words
